@@ -13,7 +13,6 @@
       padding: 0 1rem;
       line-height: 1.6;
     }
-    
     h1, h2 {
       margin-top: 1.5rem;
     }
@@ -32,37 +31,70 @@
       padding-left: 1.25rem;
     }
     .journal {
-    color: blue;  /* choose any color you like */
+      color: blue;
     }
     .profile-photo {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .nav {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .nav a:hover {
+      text-decoration: underline;
+    }
+    .passion-gallery {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .passion-photo {
+      max-width: 180px;
+      border-radius: 8px;
+    }
   </style>
 </head>
 <body>
-  <img src="img/DL_profile.jpg" alt="Photo of Donggyu Lee" class="profile-photo">
 
-  <div class="name">Donggyu Lee</div>
-  <div class="affiliation">Research Economist, Federal Reserve Bank of New York</div>
+  <!-- Top navigation -->
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#passion">Passion</a>
+  </nav>
 
-  <p>
-Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His research interests include distributional consequences of conventional and unconventional monetary policies, implications of household heterogeneity on wage and employment determination in the labor market, interactions between household income distribution and firm dynamics, and the estimation of dynamic models with heterogeneous agents. His recent work focuses on the non-linear distributional effects of unconventional monetary policies and the adverse effect of rising income dispersion on small firm job creations. He earned his Ph.D. from the University of Maryland, College Park, M.A and B.A. in Economics from Seoul National University.
-  </p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <img src="img/DL_profile.jpg" alt="Photo of Donggyu Lee" class="profile-photo">
 
-  <p>
-    Email: <a href="mailto:Donggyu.Lee@ny.frb.org">Donggyu.Lee@ny.frb.org</a><br>
-    Google Scholar: <a href="https://scholar.google.com/citations?user=VeNGOZYAAAAJ&hl=en">Profile</a>
-  </p>
+    <div class="name">Donggyu Lee</div>
+    <div class="affiliation">Research Economist, Federal Reserve Bank of New York</div>
 
+    <p>
+      Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His research interests include distributional consequences of conventional and unconventional monetary policies, implications of household heterogeneity on wage and employment determination in the labor market, interactions between household income distribution and firm dynamics, and the estimation of dynamic models with heterogeneous agents. His recent work focuses on the non-linear distributional effects of unconventional monetary policies and the adverse effect of rising income dispersion on small firm job creations. He earned his Ph.D. from the University of Maryland, College Park, and M.A. and B.A. degrees in Economics from Seoul National University.
+    </p>
 
-  <div class="section" id="cv">
+    <p>
+      Email: <a href="mailto:Donggyu.Lee@ny.frb.org">Donggyu.Lee@ny.frb.org</a><br>
+      Google Scholar: <a href="https://scholar.google.com/citations?user=VeNGOZYAAAAJ&hl=en">Profile</a>
+    </p>
+
     <h2>Curriculum Vitae</h2>
     <p><a href="cv/Donggyu_Lee_CV_042025.pdf">Download CV (PDF)</a></p>
-  </div>
+  </section>
 
-  <div class="section" id="research">
+  <!-- RESEARCH -->
+  <section id="research" class="section">
     <h2>Research</h2>
 
     <h3>Publications</h3>
@@ -72,12 +104,6 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
         Ibrahima Diagne, Keshav Dogra, Pranay Gundam, and Brian Pacula, 
         <strong><em class="journal">Journal of Economic Dynamics and Control</em></strong>, forthcoming.
         <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1147.pdf">NY Fed Staff Report</a>
-        <!-- Example links: replace URL_GOES_HERE with actual URLs or remove if not needed -->
-        <!--
-        <a href="URL_GOES_HERE">CEPR working paper</a> |
-        <a href="URL_GOES_HERE">NY Fed Staff Report</a> |
-        <a href="papers/tradeoffs_poor_divine_coincidence.pdf">Ungated draft (PDF)</a>
-        -->
       </li>
       <li>
         “<strong>Estimating HANK for Central Banks</strong>,” with Sushant Acharya, Marco Del Negro, 
@@ -86,10 +112,6 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
         <strong><em class="journal">Central Banking, Analysis and Economic Policies</em></strong>, Vol. 30.
         <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1071.pdf?sc_lang=en">NY Fed Staff Report</a> |
         <a href="https://github.com/FRBNY-DSGE/Estimating_HANK">Code (GitHub)</a>
-        <!--
-        <a href="URL_GOES_HERE">Journal</a> |
-        <a href="papers/estimating_hank_for_central_banks.pdf">Ungated draft (PDF)</a>
-        -->
       </li>
     </ul>
 
@@ -101,33 +123,19 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
         <a href="https://econweb.umd.edu/~drechsel/papers/topincomes.pdf">Ungated (PDF)</a> |
         <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1021.pdf">NY Fed Staff Report</a> |
         <a href="https://libertystreeteconomics.newyorkfed.org/2023/10/does-income-inequality-affect-small-firms/">NY Fed Liberty Street Economics Blog</a> |
-        <a href="https://cepr.org/voxeu/columns/how-income-inequality-affects-job-creation-small-and-large-firms">VoxEU column</a> 
-        <a href="https://econfip.org/policy-briefs/inequality-and-the-decline-of-small-business/">EFIP Policy Brief</a> 
-        <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/inequality-and-the-real-economy/">SUERF Policy Brief</a> 
-        <!--
-        <a href="URL_GOES_HERE">CEPR working paper</a> |
-        <a href="URL_GOES_HERE">BIS working paper</a> |
-        <a href="URL_GOES_HERE">NY Fed Staff Report</a> |
-        <a href="papers/income_inequality_job_creation.pdf">Ungated draft (PDF)</a>
-        -->
+        <a href="https://cepr.org/voxeu/columns/how-income-inequality-affects-job-creation-small-and-large-firms">VoxEU column</a> |
+        <a href="https://econfip.org/policy-briefs/inequality-and-the-decline-of-small-business/">Econfip Policy Brief</a> |
+        <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/inequality-and-the-real-economy/">SUERF Policy Brief</a>
       </li>
       <li>
         “<strong>Unconventional Monetary Policies and Inequality</strong>,” 
         revise and resubmit at <strong><em class="journal">Review of Economic Dynamics</em></strong>.
         <a href="papers/ump_inequality.pdf">Ungated (PDF)</a> |
         <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1108.pdf">NY Fed Staff Report</a>
-        <!--
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1108.pdf">NY Fed Staff Report</a> |
-        <a href="papers/ump_inequality.pdf">Ungated draft (PDF)</a>
-        -->
       </li>
       <li>
         “<strong>The Uneven Effects of Monetary Policy on Household Consumption</strong>.”
         <a href="papers/uneven_mp.pdf">Ungated (PDF)</a>
-        <!--
-        <a href="URL_GOES_HERE">Working paper version</a> |
-        <a href="papers/uneven_effects_monetary_policy_consumption.pdf">Ungated draft (PDF)</a>
-        -->
       </li>
     </ul>
 
@@ -147,7 +155,8 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
       </li>  
     </ul>
 
-    <!-- <h3>Professional publications</h3>
+    <!-- If you want to re-include professional publications later, you can uncomment this block.
+    <h3>Professional publications</h3>
     <ul>
       <li>
         “Research on the Impact of Internet Banking on Demand Deposit and Bank Profitability,” 
@@ -155,15 +164,44 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
       </li>
       <li>
         “Bitcoin: Current Status and Implications,” 2013, 
-        <em>Payment and Settlement Research Paper</em>, Bank of Korea, no. 2013-3.
+        <em class="journal">Payment and Settlement Research Paper</em>, Bank of Korea, no. 2013-3.
       </li>
       <li>
         “Mobile Payment Innovations,” 2013, 
-        <em>BOK Issue Paper</em>, Bank of Korea, no. 2013-7.
+        <em class="journal">BOK Issue Paper</em>, Bank of Korea, no. 2013-7.
       </li>
-    </ul> -->
+    </ul>
+    -->
+  </section>
 
-  </div>
+  <!-- PASSION -->
+  <section id="passion" class="section">
+    <h2>Passion</h2>
+    <p>
+      Outside of economics, I enjoy playing bass guitar and recording cover videos.
+    </p>
+
+    <h3>Photos</h3>
+    <div class="passion-gallery">
+      <!-- Replace these filenames with your actual image filenames in img/ -->
+      <img src="img/bass_live_1.jpg" alt="Playing bass live" class="passion-photo">
+      <img src="img/bass_studio_1.jpg" alt="Recording in the studio" class="passion-photo">
+    </div>
+
+    <h3>Videos</h3>
+    <ul>
+      <li>
+        <a href="https://www.youtube.com/YOUR_VIDEO_ID_1" target="_blank">
+          “Let Me Love My Youth” – bass cover
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/YOUR_VIDEO_ID_2" target="_blank">
+          Another bass cover
+        </a>
+      </li>
+    </ul>
+  </section>
 
 </body>
 </html>
