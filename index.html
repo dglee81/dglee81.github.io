@@ -32,27 +32,45 @@
       padding-left: 1.25rem;
     }
     .journal {
-      color: blue;  /* choose any color you like */
+      color: blue;
     }
     .profile-photo {
       width: 150px;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
-    /* Extra space between paper entries in Research */
-    #research ul li {
-      margin-bottom: 0.5rem;  /* increase to 0.8rem if you want more space */
+    .nav {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
+  <!-- Top navigation -->
+  <nav class="nav">
+    <a href="index.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="passion.html">Passion</a>
+  </nav>
+
   <img src="img/DL_profile.jpg" alt="Photo of Donggyu Lee" class="profile-photo">
 
   <div class="name">Donggyu Lee</div>
   <div class="affiliation">Research Economist, Federal Reserve Bank of New York</div>
 
   <p>
-Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His research interests include distributional consequences of conventional and unconventional monetary policies, implications of household heterogeneity on wage and employment determination in the labor market, interactions between household income distribution and firm dynamics, and the estimation of dynamic models with heterogeneous agents. His recent work focuses on the non-linear distributional effects of unconventional monetary policies and the adverse effect of rising income dispersion on small firm job creations. He earned his Ph.D. from the University of Maryland, College Park, M.A and B.A. in Economics from Seoul National University.
+    Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His research interests include distributional consequences of conventional and unconventional monetary policies, implications of household heterogeneity on wage and employment determination in the labor market, interactions between household income distribution and firm dynamics, and the estimation of dynamic models with heterogeneous agents. His recent work focuses on the non-linear distributional effects of unconventional monetary policies and the adverse effect of rising income dispersion on small firm job creations. He earned his Ph.D. from the University of Maryland, College Park, M.A and B.A. in Economics from Seoul National University.
   </p>
 
   <p>
@@ -60,97 +78,9 @@ Donggyu Lee is a research economist in Macroeconomic and Monetary Studies. His r
     Google Scholar: <a href="https://scholar.google.com/citations?user=VeNGOZYAAAAJ&hl=en">Profile</a>
   </p>
 
-
   <div class="section" id="cv">
     <h2>Curriculum Vitae</h2>
     <p><a href="cv/Donggyu_Lee_CV_122025.pdf">Download CV (PDF)</a></p>
-  </div>
-
-  <div class="section" id="research">
-    <h2>Research</h2>
-
-    <h3>Publications</h3>
-    <ul>
-      <li>
-        “<strong>Tradeoffs for the Poor, Divine Coincidence for the Rich</strong>,” with Marco Del Negro, 
-        Ibrahima Diagne, Keshav Dogra, Pranay Gundam, and Brian Pacula, 
-        <strong><em class="journal">Journal of Economic Dynamics and Control</em></strong>, forthcoming.
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1147.pdf">NY Fed Staff Report</a>
-      </li>
-      <li>
-        “<strong>Estimating HANK for Central Banks</strong>,” with Sushant Acharya, Marco Del Negro, 
-        Aidan Gleich, Ethan Matlin, Reca Sarfati, William Chen, Keshav Dogra, 
-        Shlok Goyal, and Sikata Sengupta,
-        <strong><em class="journal">Central Banking, Analysis and Economic Policies</em></strong>, Vol. 30.
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1071.pdf?sc_lang=en">NY Fed Staff Report</a> |
-        <a href="https://github.com/FRBNY-DSGE/Estimating_HANK">Code (GitHub)</a>
-      </li>
-      <li>
-        “<strong>The NY Fed DSGE Model: A Post-COVID Assessment</strong>,” with  Marco Del Negro, Keshav Dogra,
-        Aidan Gleich, Pranay Gundam, Donggyu Lee, Ramya Nallamotu, and Brian Pacula,
-        <strong><em class="journal">American Economic Association Papers and Proceedings</em></strong>, Vol. 114.
-        <a href="https://www.aeaweb.org/articles?id=10.1257/pandp.20241053">Journal link</a> |
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1082.pdf?sc_lang=en">NY Fed Staff Report</a>
-      </li>
-    </ul>
-
-    <h3>Working papers</h3>
-    <ul>
-      <li>
-        “<strong>Income Inequality and Job Creation</strong>,” with Sebastian Doerr and Thomas Drechsel, 
-        revise and resubmit at <strong><em class="journal">The Review of Economic Studies</em></strong>.
-        <a href="https://econweb.umd.edu/~drechsel/papers/topincomes.pdf">Ungated (PDF)</a> |
-        <a href="https://www.nber.org/papers/w33137">NBER Working Paper</a> |
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1021.pdf">NY Fed Staff Report</a> |
-        <a href="https://libertystreeteconomics.newyorkfed.org/2023/10/does-income-inequality-affect-small-firms/">NY Fed Liberty Street Economics Blog</a> |
-        <a href="https://cepr.org/voxeu/columns/how-income-inequality-affects-job-creation-small-and-large-firms">VoxEU column</a> 
-        <a href="https://econfip.org/policy-briefs/inequality-and-the-decline-of-small-business/">EFIP Policy Brief</a> 
-        <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/inequality-and-the-real-economy/">SUERF Policy Brief</a> 
-      </li>
-      <li>
-        “<strong>Unconventional Monetary Policies and Inequality</strong>,” 
-        revise and resubmit at <strong><em class="journal">Review of Economic Dynamics</em></strong>.
-        <a href="papers/ump_inequality.pdf">Ungated (PDF)</a> |
-        <a href="https://www.newyorkfed.org/medialibrary/media/research/staff_reports/sr1108.pdf">NY Fed Staff Report</a>
-      </li>
-      <li>
-        “<strong>The Uneven Effects of Monetary Policy on Household Consumption</strong>.”
-        <a href="papers/uneven_mp.pdf">Ungated (PDF)</a>
-      </li>
-    </ul>
-
-    <h3>Work in progress</h3>
-    <ul>
-      <li>
-        “<strong>Forecast Uncertainty and Forward Guidance</strong>,” with Emma Ko.
-      </li>      
-      <li>
-        “<strong>Income Inequality and Government Spending Multipliers</strong>,” with Choongryul Yang.
-      </li>      
-      <li>
-        “<strong>Distributional Consequences of Lowering the Long-Run Inflation</strong>,” with Dohyeon Park and Jun Hee Kwak.
-      </li>
-      <li>
-        “<strong>Business Cycles with Stratified Labor Markets</strong>,” with Luminita Stevens.
-      </li>  
-    </ul>
-
-    <!-- <h3>Professional publications</h3>
-    <ul>
-      <li>
-        “Research on the Impact of Internet Banking on Demand Deposit and Bank Profitability,” 
-        with Bonggeul Chun, 2014, BOK Working paper, Bank of Korea, no. 14-6.
-      </li>
-      <li>
-        “Bitcoin: Current Status and Implications,” 2013, 
-        <em>Payment and Settlement Research Paper</em>, Bank of Korea, no. 2013-3.
-      </li>
-      <li>
-        “Mobile Payment Innovations,” 2013, 
-        <em>BOK Issue Paper</em>, Bank of Korea, no. 2013-7.
-      </li>
-    </ul> -->
-
   </div>
 
 </body>
