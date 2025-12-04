@@ -39,16 +39,27 @@
     .nav a:hover {
       text-decoration: underline;
     }
-    .passion-gallery {
-      display: flex;
-      gap: 0.75rem;
-      flex-wrap: wrap;
+        .passion-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
       margin-bottom: 1rem;
     }
     .passion-photo {
-      max-width: 180px;
-      border-radius: 8px;
+      width: 100%;      /* fill the column width */
+      height: auto;     /* let height adjust automatically */
+      border-radius: 12px;
+      display: block;
     }
+    .video-embed {
+      margin-bottom: 1.5rem;
+    }
+    .video-embed iframe {
+      width: 100%;
+      max-width: 560px;
+      height: 315px;  /* 16:9 player */
+    }
+
   </style>
 </head>
 <body>
@@ -83,9 +94,15 @@
   <h2>Videos</h2>
   <ul>
     <li>
-      <a href="https://www.youtube.com/watch?v=6zy6HFCEG-0" target="_blank">
-        “We Will Never Stop - Team Luke Worship” – bass cover
-      </a>
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/6zy6HFCEG-0"
+          title="We Will Never Stop - Team Luke Worship – bass cover"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
     </li>
     <li>
       <a href="https://www.youtube.com/watch?v=ATqtiseystQ" target="_blank">
